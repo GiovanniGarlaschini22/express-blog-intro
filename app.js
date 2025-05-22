@@ -14,3 +14,12 @@ app.use(express.static("public"));
 app.listen(port, () => {
     console.log("server in ascolto");  
 });
+
+// ROTTE DELLE API //
+// rotta che ritorna la stringa "Server del mio blog" //
+app.get("/", (req, res) => {
+    const resString = {
+        data: "Server del mio blog"
+    };
+    res.json(resString);
+})
