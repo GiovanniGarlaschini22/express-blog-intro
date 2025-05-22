@@ -64,6 +64,11 @@ app.get("/bacheca", (req, res) => {
     res.json(resBacheca);
 });
 
+/*
+ho configurato gli asset statici sull’applicazione in modo che si possono visualizzare le immagini associate ad ogni post;
+infatti in postman, all'interno del json, ci sono tutti i percorsi delle immagini e inserendo il percoso dell'immagine le visualizzo
+*/
+
 
 // metto il server in ascolto //
 app.listen(port, () => {
